@@ -1,0 +1,35 @@
+body{
+    margin:0;
+    padding: 0;
+    background-image: url("https://wonderfulengineering.com/wp-content/uploads/2016/01/Desktop-Wallpaper-4.jpg;" );
+    
+    background-attachment: fixed;
+    background-size: cover;
+    
+
+}
+
+.container{
+    height: 540px;
+    width:390px;
+    margin-top: 70px;
+    padding-bottom: 70px;;
+    border-radius: 14px;
+    box-shadow: 0 0 5px black;
+    
+    
+        
+}
+.image{
+    
+    width: 47%;
+    margin-left :89px;
+    
+    
+}
+.btn{
+    width:100%;
+}
+.formclass{
+    padding-top: 50px;
+}

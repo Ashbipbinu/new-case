@@ -1,0 +1,22 @@
+body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.table-css{
+    margin-left: 100px;
+    margin-top: 60px;   
+}
+header{
+    position: fixed;
+    width:100%;
+}
+.image{
+    width:50px;
+    height: 50px;
+    margin-left: 83px;
+    border-radius: 50%;
+}
+input{
+    text-align: center;
+}

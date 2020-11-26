@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+    </style>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body >
+  <header>
+        
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary py-4 ">
+        <img src="https://lh3.googleusercontent.com/92xIZAW-mdwucFX1v8kyTXlLVgZfLczHv8XCVOH1tFc0M3cTRI4q9qJLUM96PqCrgWjc" alt="" class="image">
+        <button class="navbar-toggler ml-auto hidden-sm-up float-xs-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse  ml-auto"></div> 
+        <div class="collapse navbar-collapse navbarx ml-auto" id="navbarNav">
+          <ul class="navbar-nav  ml-auto ">
+            <li class="nav-item px-5  ml-auto">
+              <a class="nav-link todo text-white" href="#">To Do List <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item px-5  ml-auto">
+              <a class="nav-link  logo text-white " href="findex.html">Logout</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+
+
+</header>
+<div class="parent">
+  <div id="icon">
+    <li style="padding-left: 30px;"><a href="front-page.html"><i class="fa fa-home" id="ico" aria-hidden="true"></i></a>
+    </li>
+  </div>
+  <div class = "child" id="demo text-center">
+
+    <h2 class="text-center pt-4 " style=" color: rgb(170, 169, 169); text-transform: uppercase; font-family: 'Goldman', cursive; font-size: xx-large; font-weight: bolder;  "></h2>
+    <br>
+    <br>
+   
+
+   
+    <table class="container table table-sm   table-striped table-hover text-center table-css col-xs-12 todo ;" style="width: 90%; font-size: 23px;" id="grocery_table">
+      <thead>
+        <tr style="font-weight: bold;font-family: 'Goldman'; text-transform: uppercase; font-size:25px;">
+          <td></td>
+          <td style="font-family: 'Nerko One', cursive;">To Do list</td>
+          </tr>  
+        </thead>
+        <tbody>
+          <tr>
+            <td><input type="checkbox" class="checks" onclick="return checkFtn()"></td>
+            <td>delectus aut autem</td>
+          </tr>
+
+          <tr>
+            <td><input type="checkbox" class="checks" onclick="return checkFtn()"></td>
+            <td>quis ut nam facilis et officia qui</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" class="checks" onclick="return checkFtn()"></td>
+            <td>fugiat veniam minus</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" class="checks" onclick="return checkFtn()"></td>
+            <td>et porro tempora</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" class="checks" onclick="return checkFtn()"></td>
+            <td>laboriosam mollitia et enim quasi adipisci quia provident illum</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" class="checks" onclick="return checkFtn()"></td>
+            <td>qui ullam ratione quibusdam voluptatem quia omnis</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" class="checks" onclick="return checkFtn()"></td>
+             <td>illo expedita consequatur quia in</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" class="checks" onclick="return checkFtn()"></td>
+            <td>quo adipisci enim quam ut ab</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" class="checks" onclick="return checkFtn()"></td>
+            <td>molestiae perspiciatis ipsa</td>
+          </tr>
+  
+          <tr>
+            <td><input type="checkbox" class="checks" onclick="return checkFtn()"></td>
+             <td>vero rerum temporibus dolor</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" class="checks" onclick="return checkFtn()"></td>
+              <td>ipsa repellendus fugit nisi</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" class="checks" onclick="return checkFtn()"></td>
+              <td>et doloremque nulla</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" class="checks" onclick="return checkFtn()"></td>
+              <td>delectus aut autem</td>
+          </tr>
+
+          <tr>
+            <td><input type="checkbox" class="checks" onclick="return checkFtn()"></td>
+             <td>quis ut nam facilis et officia qui</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" class="checks" onclick="return checkFtn()"></td>
+            <td>qui ullam ratione quibusdam voluptatem quia omnis</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" class="checks" onclick="return checkFtn()"></td>
+            <td>illo expedita consequatur quia in</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" class="checks" onclick="return checkFtn()"></td>
+            <td>quo adipisci enim quam ut ab</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" class="checks" onclick="return checkFtn()"></td>
+            <td>molestiae perspiciatis ipsa</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" class="checks" onclick="return checkFtn()"></td>
+            <td>illo est ratione doloremque quia maiores aut</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" class="checks" onclick="return checkFtn()"></td>
+            <td>vero rerum temporibus dolor</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" class="checks" onclick="return checkFtn()"></td>
+            <td>ipsa repellendus fugit nisi</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" class="checks" onclick="return checkFtn()"></td>
+            <td>et doloremque nulla</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" class="checks" onclick="return checkFtn()"></td>
+            <td>delectus aut autem</td>
+          </tr>
+
+          <tr>
+            <td><input type="checkbox" class="checks" onclick="return checkFtn()"></td>
+            <td>quis ut nam facilis et officia qui</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" class="checks" onclick="return checkFtn()"></td>
+            <td>fugiat veniam minus</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" class="checks" onclick="return checkFtn()"></td>
+            <td>et porro tempora</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" class="checks" onclick="return checkFtn()"></td>
+            <td>laboriosam mollitia et enim quasi adipisci quia provident illum</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" class="checks" onclick="return checkFtn()"></td>
+            <td>qui ullam ratione quibusdam voluptatem quia omnis</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" class="checks" onclick="return checkFtn()"></td>
+            <td>illo expedita consequatur quia in</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" class="checks" onclick="return checkFtn()"></td>
+            <td>quo adipisci enim quam ut ab</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" class="checks" onclick="return checkFtn()"></td>
+            <td>molestiae perspiciatis ipsa</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" class="checks" onclick="return checkFtn()"></td>
+            <td>illo est ratione doloremque quia maiores aut</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" class="checks" onclick="return checkFtn()"></td>
+            <td>vero rerum temporibus dolor</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" class="checks" onclick="return checkFtn()"></td>
+            <td>ipsa repellendus fugit nisi</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" class="checks" onclick="return checkFtn()"></td>
+            <td>et doloremque nulla</td>
+          </tr>
+          
+        </tbody>
+     
+    </table>
+  </div>
+</div>
+<script src="promise.js">
+        
+  // function checkFtn(){
+  //     checks = document.getElementsByClassName("checks");
+  //     var count=0;
+  //     for(var i = 0;i<checks.length;i++){
+  //         if(checks[i].checked==true){
+  //             count=count+1;
+  //         }
+  //     }
+  //     if(count == 5){
+  //         alert("\t\t\t\tCongrats!! \n 5 Tasks  have been successfully completed.");
+  //     }
+  // }
+           
+       
+   
+
+</script>
+</body>
+</html>
