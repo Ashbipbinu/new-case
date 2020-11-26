@@ -15,7 +15,7 @@
             }
             else{
                 reject("entered else");
-                alert("hot")
+                alert("Access Denied")
                 return false;
             }
         })
