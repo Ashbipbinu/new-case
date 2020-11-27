@@ -1,30 +1,38 @@
-function checkFtn() {
-    var grid = document.getElementsByClassName("todo");
-    var check = document.getElementsByTagName("input");
-    var count =  0;
-    // promise
-    let myPromise = new Promise(function(myResolve, myReject) {
-    //Loop 
-    for (var i = 0; i < check.length; i++) {
-      // if loop
-        if (check[i].checked) {
-            count++;
-            if(count ==5){
-                alert("\t\t\t\t Congrats !!\n5 Tasks have been successfully completed.");
-                 myResolve("Successfully completed 5 tasks");
-                 console.log("entered if statement");
-                $(".list").toggle(this.disabled);
-            }
-            //   else if(checked>=6){
-            //   alert("Cannot access more than 5 task");
-             
-            //  }  
-            else {
-                console.log("entered else condition")
-              myReject("Error");
-           }
-        }
+function checkFtn(){
+    return new Promise((reject,resolve)=>{
+        checks = document.getElementsByClassName("checks");
+        
        
-    }
-   });
-  }
+            var count = 0;
+            for(var i=0;i<checks.length;i++){
+                
+                if(checks[i].checked){
+                   
+                    count = count+1;
+                    console.log(count);
+                    if(count==5){
+                        resolve("Successfully selected 5 boxes");
+                        alert("sorry only 5 can be selected");
+                    }
+                    else{
+                        console.log("check more boxes")
+                        
+                    }
+                   
+                }
+                else{
+                    
+                    reject("not entered");
+                    return false;
+            }
+           
+            }
+            console.log(count);
+        
+    })
+}
+checkFtn().then((msg)=>{
+    console.log(msg);
+}).catch((msd)=>{
+    console.log(msd);
+})
